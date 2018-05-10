@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+	<style>
+		p {
+			color:#fdd700;
+			font-family:"Courier New";
+			font-size:20px;
+		}
+
+		button {
+			background-color:#226;
+			color:#fdd700;
+			font-family:"Courier New";
+			text-decoration: underline;
+			border-width:3px;
+			border-color:#fdd700;
+		}
+
+		h1{ 
+			color:#883388;
+			font-family:"Courier New";
+			font-size:20px;
+		}
+		
+		#idk{
+			background-color:#411;
+			color:#f00;
+			font-family:"Courier New";
+			font-weight:strong;
+			text-decoration: underline;
+			border-width:3px;
+			border-color:#f00;
+		}
+		#start{
+			color:#fff
+		}
+
+
+
+
+	</style>
+</head>
+<body bgcolor=#004>
+
+
+	<p id="paragrafo"></p> <h1 id="special"></h1> <p id="secondo"></p>
+
+	<button onclick="capricorn()"> Capricorn </button>
+	<button onclick="acquario()"> Acquarius </button>
+	<button onclick="pesci()"> Fishes </button>	<button onclick="ariete()"> Aries </button>
+
+	<button onclick="toro()"> Tauros </button>
+	<button onclick="gemelli()"> Gemini </button> <br/>
+	<button onclick="cancro()"> Cancer </button>
+	<button onclick="leone()"> Leo </button>
+
+	<button onclick="vergine()"> Virgo </button>
+	<button onclick="bilancia()"> Libra </button>	<button onclick="scorpione()"> Scorpio </button>
+	<button onclick="saggitario()"> Sagittarius </button>
+	<br/>
+	<br/>
+	<button onclick="idk()" id="idk"> I don't know </button>
+
+
+	<script>
+
+
+	var d="Select ur sign";
+	var cu=d;
+	var empty="    ";
+	
+	var cc="You are a very focused person; but remember, there are things stronger than your horns";
+	var ac="Sorry idk, maybe find some fish";
+	var pe="May u find an acquarius" 
+	var ar="muh... at least you aren't not a goat";
+	var to="Are you in Spain? If no you re lucky";
+	var ge="You will find your love, but she/he will kiss your twin";
+	var ca="You are sinister, dark and antisocial: the best Sign";
+	var le="Arrr... A lion. Now go back to the jungle damn nigger";
+	var ve="You are a damn virgin. You will be always a loser"
+	var bi="I know a lot of libras. All them are at my supermarket"
+	var sc="Oh you are a scorpion... Yeah you are noisy like a scorpion in the pants";
+	var sa="Yeah you are funny, but remember funny is not cool"
+
+	function refr(){
+		document.getElementById("paragrafo").innerHTML=cu;
+	}
+		
+	setInterval(function(){
+	refr();
+	},100)
+
+	
+
+	function capricorn(){
+		cu=cc;
+		document.getElementById("special").innerHTML=empty;
+	}
+	function acquario(){
+		cu=ac;
+		document.getElementById("special").innerHTML=empty;
+	}
+	function pesci(){
+		cu=pe;
+		document.getElementById("special").innerHTML=empty;
+	}
+	function ariete(){
+		cu=ar;
+		document.getElementById("special").innerHTML=empty;
+	}
+	function toro(){
+		cu=to;
+		document.getElementById("special").innerHTML=empty;
+	}
+	function gemelli(){
+		cu=ge;
+		document.getElementById("special").innerHTML=empty;
+	}
+	function cancro(){
+		cu=empty;
+		document.getElementById("special").innerHTML=ca;
+	}
+	function leone(){
+		cu=le;
+		document.getElementById("special").innerHTML=empty;
+	}
+	function vergine(){
+		cu=ve;
+		document.getElementById("special").innerHTML=empty;
+	}
+	function  bilancia(){
+		cu=bi;
+		document.getElementById("special").innerHTML=empty;
+	}
+	function scorpione(){
+		cu=sc;
+		document.getElementById("special").innerHTML=empty;
+	}
+	function saggitario(){
+		cu=sa;
+		document.getElementById("special").innerHTML=empty;
+	}
+
+	function idk(){
+		alert("Every normal person knows his own sign. \n \n You don't deserve to exist");
+	}
+
+	</script>
+</body>
+</html>
